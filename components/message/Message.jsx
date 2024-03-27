@@ -24,7 +24,11 @@ export default function Message(props) {
         })}
       >
         <p
-          dangerouslySetInnerHTML={{ __html: content.replace(/\n/g, "<br/>") }}
+          dangerouslySetInnerHTML={{
+            __html: content
+              .replace(/\n/g, "<br/>")
+              .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>"),
+          }}
         />
         {citations?.length > 0 && <Citations citationsList={citations} />}
       </div>
