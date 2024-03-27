@@ -2,13 +2,13 @@
 import OpenAI from "openai";
 
 const resource = "aoaicopilot";
-const model = "text-embedding-ada-002";
 const apiVersion = "2024-02-15-preview";
 const apiKey = process.env["AZURE_OPENAI_API_KEY"];
+const embeddingModel = process.env["AZURE_EMBEDDING_MODEL"];
 
 const openai = new OpenAI({
   apiKey,
-  baseURL: `https://${resource}.openai.azure.com/openai/deployments/${model}`,
+  baseURL: `https://${resource}.openai.azure.com/openai/deployments/${embeddingModel}`,
   defaultQuery: { "api-version": apiVersion },
   defaultHeaders: { "api-key": apiKey },
 });
