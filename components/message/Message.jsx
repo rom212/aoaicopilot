@@ -9,8 +9,6 @@ import Citations from "../citations/citations";
 export default function Message(props) {
   const { type, content, citations } = props;
 
-  console.log("CITATINS: ", citations);
-
   return (
     <div
       className={classNames(styles.container, {
