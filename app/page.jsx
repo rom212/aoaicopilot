@@ -35,7 +35,8 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          AI GBB Copilot - Trust but verify | Cutoff: 11/07/24 | Questions
+          AI GBB Copilot - Trust but verify | Cutoff:{" "}
+          <code className={styles.code}>11/07/24</code> | Questions
           answered:&nbsp;
           <code className={styles.code}>
             {displayCounter ? parseInt(displayCounter).toLocaleString() : "0"}
