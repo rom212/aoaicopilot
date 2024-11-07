@@ -35,11 +35,11 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Azure Open AI Documentation Copilot - Questions already
+          AI GBB Copilot - Trust but verify | Cutoff: 11/07/24 | Questions
           answered:&nbsp;
           <code className={styles.code}>
             {displayCounter ? parseInt(displayCounter).toLocaleString() : "0"}
-          </code>
+          </code>{" "}
         </p>
         <div>
           <a href="mailto:romanmullier@microsoft.com?subject=Feedback on AOAI Documentation Copilot">

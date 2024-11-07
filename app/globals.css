@@ -17,6 +17,22 @@
     rgba(1, 65, 255, 0.3)
   );
 
+  --primary-glow: radial-gradient(rgba(1, 255, 14, 0.4), rgba(1, 255, 14, 0));
+  --secondary-glow: linear-gradient(
+    to bottom right,
+    rgba(1, 255, 14, 0),
+    rgba(1, 255, 14, 0),
+    rgba(1, 255, 14, 0.3)
+  );
+
+  --primary-glow: radial-gradient(rgba(107, 1, 255, 0.4), rgba(107, 1, 255, 0));
+  --secondary-glow: linear-gradient(
+    to bottom right,
+    rgba(107, 1, 255, 0),
+    rgba(107, 1, 255, 0),
+    rgba(107, 1, 255, 0.3)
+  );
+
   --tile-start-rgb: 2, 13, 46;
   --tile-end-rgb: 2, 5, 19;
   --tile-border: conic-gradient(
